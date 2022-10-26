@@ -1,7 +1,10 @@
-.backgroundImage {
-    background-image: url("../../../public/notFound.jpeg");
+.notFound{
+    font-weight: bolder;
+    font-size: xx-large;
+    align-items: center;
+    display: flex;
+    text-align: center;
     height: 100vh;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
+    justify-content: center;
+    width: 100vw;
 }
