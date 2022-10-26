@@ -5,19 +5,22 @@ import styles from './styles.module.css';
 import ReturnBackButton from '../../components/ReturnBackButton';
 
 function CampaignDetail() {
-    const { SeoName, id } = useParams();
+    const { id } = useParams();
     const [details, setDetails] = useState({ PromotionDetailItems: [] });
 
 
     useEffect(() => {
         document.title = "Promotion Detail"
-        fetchData()
+        fetchData();
+        // eslint-disable-next-line
     }, [])
+
+
     const fetchData = async () => {
         const { data } = await axios.get(`https://api.extrazone.com/promotions?Id=${id}`, { headers: { 'X-Country-Id': 'TR', 'X-Language-Id': 'TR' } })
         setDetails(data)
-
     }
+
 
     return (
         <div>
