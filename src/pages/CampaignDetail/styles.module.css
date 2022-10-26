@@ -1,0 +1,160 @@
+.container {
+    margin: 1%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 98vh;
+}
+
+.returnBackBox {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.imageBox {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.image {
+    border: 1px solid #d3d3d3;
+    border-radius: 30px 30px 30px 30%;
+    border-bottom-left-radius: 40%;
+    width: 100%;
+    height: 50vh;
+}
+
+.remainingTextBox {
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.brandLogo {
+    bottom: 1%;
+    position: absolute;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+}
+
+.title>p span {
+    font-size: xx-large;
+    font-weight: bold;
+    color: black !important;
+}
+
+.descriptionBox {
+    width: 100%;
+    height: 50vh;
+    margin-top: 3vh;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.buttonBox {
+    position: sticky;
+    bottom: 0%;
+    width: 100%;
+}
+
+.button {
+    background-color: red;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.promotionBox {
+    height: 30vh;
+    width: 100%;
+    margin-top: 7%;
+
+}
+
+.promotionTitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+.promotionDetailItems {
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    width: 100%;
+}
+
+.promotionDetailItem {
+    width: 20%;
+    border: 1px solid lightgray;
+    border-radius: 10%;
+    height: 20vh;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2%;
+
+}
+
+.promotionImage {
+    height: 40%;
+}
+
+.promotionItemTitle {
+    margin-top: 3px;
+    font-size: small;
+}
+
+.promotionItemDescription {
+    color: green;
+    font-weight: bolder;
+    margin-top: 3px;
+    font-size: small;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .imageBox {
+        width: 45%;
+        height: 50vh;
+        position: relative;
+    }
+
+    .descriptionBox {
+        width: 55%;
+        padding: 0 2% 0 2%;
+        margin-top: 0;
+        height: 50vh;
+
+    }
+
+    .promotionDetailItem {
+        width: 8%;
+        height: 30vh;
+    }
+}

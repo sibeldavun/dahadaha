@@ -1,0 +1,7 @@
+.backgroundImage {
+    background-image: url("../../../public/notFound.jpeg");
+    height: 100vh;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
